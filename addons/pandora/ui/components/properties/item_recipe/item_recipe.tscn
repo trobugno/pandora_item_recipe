@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgrxqsrekey37"]
+
+[ext_resource type="Script" path="res://addons/pandora/ui/components/properties/item_recipe/item_recipe.gd" id="1_vxfva"]
+[ext_resource type="PackedScene" uid="uid://bfhqt0xa4a2fh" path="res://addons/pandora/ui/components/entity_picker/entity_picker.tscn" id="2_dga1y"]
+
+[node name="ItemRecipe" type="MarginContainer"]
+script = ExtResource("1_vxfva")
+type = "item_recipe"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="EntityPicker" parent="HBoxContainer" instance=ExtResource("2_dga1y")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpinBox" type="SpinBox" parent="HBoxContainer"]
+layout_mode = 2
+focus_mode = 1
+max_value = 99999.0
+rounded = true
+select_all_on_focus = true

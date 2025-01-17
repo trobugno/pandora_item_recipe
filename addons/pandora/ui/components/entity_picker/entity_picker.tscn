@@ -1,0 +1,112 @@
+[gd_scene load_steps=11 format=3 uid="uid://bfhqt0xa4a2fh"]
+
+[ext_resource type="Script" path="res://addons/pandora/ui/components/entity_picker/entity_picker.gd" id="1_cjsnj"]
+[ext_resource type="Texture2D" uid="uid://b668o6atx4igw" path="res://assets/ui/editor/pandora/pandora_item.png" id="2_0yvqt"]
+[ext_resource type="Texture2D" uid="uid://sr0nvyaof3oc" path="res://assets/ui/editor/pandora/pandora_food.png" id="3_vfv87"]
+[ext_resource type="Texture2D" uid="uid://cunteunvfqtuu" path="res://assets/ui/editor/pandora/pandora_plant.png" id="4_t38uo"]
+[ext_resource type="Texture2D" uid="uid://cxouq5ghvjcr1" path="res://assets/ui/editor/pandora/pandora_tool.png" id="5_6ye81"]
+[ext_resource type="Texture2D" uid="uid://cfkmwjfppw3k0" path="res://assets/ui/editor/pandora/pandora_wood.png" id="6_a8ib8"]
+[ext_resource type="Texture2D" uid="uid://cas42jamgt7m8" path="res://assets/characters/npcs/002_aunt_enklisia_dialogue.png" id="7_m6qxj"]
+[ext_resource type="Texture2D" uid="uid://8dh1t5s03vr2" path="res://assets/ui/editor/pandora/pandora_armor.png" id="8_ww3wa"]
+[ext_resource type="Texture2D" uid="uid://dghsrqpog042s" path="res://assets/ui/editor/pandora/pandora_quest.png" id="9_aj5m8"]
+[ext_resource type="Texture2D" uid="uid://bx1aofrf52ewg" path="res://assets/characters/npcs/001_uncle_bob_dialogue.png" id="10_8ofq3"]
+
+[node name="EntityPicker" type="HBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cjsnj")
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+expand_icon = true
+item_count = 29
+popup/item_0/text = "Bowl"
+popup/item_0/icon = ExtResource("2_0yvqt")
+popup/item_1/text = "Disgusting Food"
+popup/item_1/icon = ExtResource("3_vfv87")
+popup/item_1/id = 1
+popup/item_2/text = "Sweet Wine"
+popup/item_2/icon = ExtResource("3_vfv87")
+popup/item_2/id = 2
+popup/item_3/text = "Delicious Sweet Soup"
+popup/item_3/icon = ExtResource("3_vfv87")
+popup/item_3/id = 3
+popup/item_4/text = "Mungi Lirt"
+popup/item_4/icon = ExtResource("3_vfv87")
+popup/item_4/id = 4
+popup/item_5/text = "Wheat"
+popup/item_5/icon = ExtResource("4_t38uo")
+popup/item_5/id = 5
+popup/item_6/text = "Tomato"
+popup/item_6/icon = ExtResource("4_t38uo")
+popup/item_6/id = 6
+popup/item_7/text = "Handle"
+popup/item_7/icon = ExtResource("2_0yvqt")
+popup/item_7/id = 7
+popup/item_8/text = "Great Handle"
+popup/item_8/icon = ExtResource("2_0yvqt")
+popup/item_8/id = 8
+popup/item_9/text = "Stone Pickaxe"
+popup/item_9/icon = ExtResource("5_6ye81")
+popup/item_9/id = 9
+popup/item_10/text = "Stone Axe"
+popup/item_10/icon = ExtResource("5_6ye81")
+popup/item_10/id = 10
+popup/item_11/text = "Stone Hammer"
+popup/item_11/icon = ExtResource("5_6ye81")
+popup/item_11/id = 11
+popup/item_12/text = "Branch"
+popup/item_12/icon = ExtResource("6_a8ib8")
+popup/item_12/id = 12
+popup/item_13/text = "002 - Aunt Enklisia"
+popup/item_13/icon = ExtResource("7_m6qxj")
+popup/item_13/id = 13
+popup/item_14/text = "Rusted Hoe"
+popup/item_14/icon = ExtResource("5_6ye81")
+popup/item_14/id = 14
+popup/item_15/text = "HOE"
+popup/item_15/icon = ExtResource("5_6ye81")
+popup/item_15/id = 15
+popup/item_16/text = "HAMMER"
+popup/item_16/icon = ExtResource("5_6ye81")
+popup/item_16/id = 16
+popup/item_17/text = "PICKAXE"
+popup/item_17/icon = ExtResource("5_6ye81")
+popup/item_17/id = 17
+popup/item_18/text = "AXE"
+popup/item_18/icon = ExtResource("5_6ye81")
+popup/item_18/id = 18
+popup/item_19/text = "FEET"
+popup/item_19/icon = ExtResource("8_ww3wa")
+popup/item_19/id = 19
+popup/item_20/text = "LEGS"
+popup/item_20/icon = ExtResource("8_ww3wa")
+popup/item_20/id = 20
+popup/item_21/text = "ARM"
+popup/item_21/icon = ExtResource("8_ww3wa")
+popup/item_21/id = 21
+popup/item_22/text = "ARMOR"
+popup/item_22/icon = ExtResource("8_ww3wa")
+popup/item_22/id = 22
+popup/item_23/text = "HEAD"
+popup/item_23/icon = ExtResource("8_ww3wa")
+popup/item_23/id = 23
+popup/item_24/text = "Carrot"
+popup/item_24/icon = ExtResource("4_t38uo")
+popup/item_24/id = 24
+popup/item_25/text = "Potato"
+popup/item_25/icon = ExtResource("4_t38uo")
+popup/item_25/id = 25
+popup/item_26/text = "First harvest"
+popup/item_26/icon = ExtResource("9_aj5m8")
+popup/item_26/id = 26
+popup/item_27/text = "001 - Uncle Bob"
+popup/item_27/icon = ExtResource("10_8ofq3")
+popup/item_27/id = 27
+popup/item_28/text = "Sweet Percots"
+popup/item_28/icon = ExtResource("3_vfv87")
+popup/item_28/id = 28

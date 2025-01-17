@@ -1,0 +1,335 @@
+{
+	"_entity_data": {
+		"_categories": [
+			{
+				"_category_id": "169",
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_food.png",
+				"_id": "80",
+				"_index": 0,
+				"_name": "Foods",
+				"_script_path": "res://models/food_entity.gd"
+			},
+			{
+				"_category_id": "169",
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_plant.png",
+				"_id": "81",
+				"_index": 0,
+				"_name": "Plants"
+			},
+			{
+				"_category_id": "169",
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_wood.png",
+				"_id": "95",
+				"_index": 0,
+				"_name": "Woods"
+			},
+			{
+				"_category_id": "169",
+				"_icon_color": "ffffff00",
+				"_id": "110",
+				"_index": 0,
+				"_name": "Various"
+			},
+			{
+				"_category_id": "170",
+				"_generate_ids": true,
+				"_icon_color": "ffffff00",
+				"_id": "138",
+				"_ids_generation_class": "CraftingRecipes",
+				"_index": 0,
+				"_name": "CraftingRecipes",
+				"_script_path": "res://models/crafting_recipe_entity.gd"
+			},
+			{
+				"_category_id": "170",
+				"_generate_ids": true,
+				"_icon_color": "ffffff00",
+				"_id": "159",
+				"_ids_generation_class": "CookingRecipes",
+				"_index": 0,
+				"_name": "CookingRecipes",
+				"_script_path": "res://models/cooking_recipe_entity.gd"
+			},
+			{
+				"_category_id": "",
+				"_generate_ids": true,
+				"_icon_color": "ffffffff",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_item.png",
+				"_id": "169",
+				"_ids_generation_class": "Items",
+				"_index": 0,
+				"_name": "Items",
+				"_script_path": "res://models/item_entity.gd"
+			},
+			{
+				"_category_id": "",
+				"_generate_ids": true,
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_recipe.png",
+				"_id": "170",
+				"_ids_generation_class": "ItemRecipes",
+				"_index": 0,
+				"_name": "ItemRecipes",
+				"_script_path": "res://models/recipe_entity.gd"
+			}
+		],
+		"_entities": [
+			{
+				"_category_id": "80",
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_food.png",
+				"_id": "51",
+				"_index": 1,
+				"_name": "Sweet Percots"
+			},
+			{
+				"_category_id": "81",
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_plant.png",
+				"_id": "54",
+				"_index": 2,
+				"_name": "Potato"
+			},
+			{
+				"_category_id": "81",
+				"_icon_color": "ffffff00",
+				"_icon_path": "res://assets/ui/editor/pandora/pandora_plant.png",
+				"_id": "55",
+				"_index": 1,
+				"_name": "Carrot"
+			},
+			{
+				"_category_id": "95",
+				"_icon_color": "ffffff00",
+				"_id": "96",
+				"_index": 0,
+				"_name": "Branch"
+			},
+			{
+				"_category_id": "110",
+				"_icon_color": "ffffff00",
+				"_id": "111",
+				"_index": 0,
+				"_name": "Great Handle"
+			},
+			{
+				"_category_id": "110",
+				"_icon_color": "ffffff00",
+				"_id": "112",
+				"_index": 0,
+				"_name": "Handle"
+			},
+			{
+				"_category_id": "81",
+				"_icon_color": "ffffff00",
+				"_id": "113",
+				"_index": 0,
+				"_name": "Tomato"
+			},
+			{
+				"_category_id": "81",
+				"_icon_color": "ffffff00",
+				"_id": "114",
+				"_index": 0,
+				"_name": "Wheat"
+			},
+			{
+				"_category_id": "80",
+				"_icon_color": "ffffff00",
+				"_id": "115",
+				"_index": 0,
+				"_name": "Mungi Lirt"
+			},
+			{
+				"_category_id": "80",
+				"_icon_color": "ffffff00",
+				"_id": "116",
+				"_index": 0,
+				"_name": "Sweet Vegetable Soup"
+			},
+			{
+				"_category_id": "80",
+				"_icon_color": "ffffff00",
+				"_id": "117",
+				"_index": 0,
+				"_name": "Sweet Wine"
+			},
+			{
+				"_category_id": "80",
+				"_icon_color": "ffffff00",
+				"_id": "118",
+				"_index": 0,
+				"_name": "Disgusting Food"
+			},
+			{
+				"_category_id": "110",
+				"_icon_color": "ffffff00",
+				"_id": "119",
+				"_index": 0,
+				"_name": "Bowl"
+			},
+			{
+				"_category_id": "110",
+				"_icon_color": "ffffff00",
+				"_id": "145",
+				"_index": 0,
+				"_name": "Empty Bottle"
+			},
+			{
+				"_category_id": "159",
+				"_icon_color": "ffffff00",
+				"_id": "162",
+				"_index": 0,
+				"_name": "Sweet Vegetable Soup",
+				"_property_overrides": {
+					"description": {
+						"type": "string",
+						"value": "SWEET_VEGETABLE_SOUP_RECIPE_DESCRIPTION"
+					},
+					"recipe": {
+						"type": "array",
+						"value": {
+							"0": {
+								"type": "item_recipe",
+								"value": {
+									"item": {
+										"_entity_id": "119",
+										"_type": 0
+									},
+									"quantity": 1
+								}
+							}
+						}
+					},
+					"result": {
+						"type": "reference",
+						"value": {
+							"_entity_id": "116",
+							"_type": 0
+						}
+					},
+					"waste": {
+						"type": "reference",
+						"value": {
+							"_entity_id": "145",
+							"_type": 0
+						}
+					}
+				}
+			}
+		],
+		"_properties": [
+			{
+				"_category_id": "80",
+				"_default_value": 0,
+				"_id": "82",
+				"_name": "heal_value",
+				"_type": "int"
+			},
+			{
+				"_category_id": "80",
+				"_default_value": 0,
+				"_id": "83",
+				"_name": "mana_value",
+				"_type": "int"
+			},
+			{
+				"_category_id": "80",
+				"_default_value": 0,
+				"_id": "84",
+				"_name": "energy_value",
+				"_type": "int"
+			},
+			{
+				"_category_id": "138",
+				"_default_value": {
+
+				},
+				"_id": "139",
+				"_name": "repair_items",
+				"_setting_overrides": {
+					"Array Type": "item_recipe",
+					"Category Filter": "43",
+					"Min Quantity": 0
+				},
+				"_type": "array"
+			},
+			{
+				"_category_id": "138",
+				"_default_value": {
+
+				},
+				"_id": "142",
+				"_name": "creation_items",
+				"_setting_overrides": {
+					"Array Type": "item_recipe",
+					"Category Filter": "43",
+					"Min Quantity": 0
+				},
+				"_type": "array"
+			},
+			{
+				"_category_id": "138",
+				"_default_value": {
+
+				},
+				"_id": "143",
+				"_name": "combination_items",
+				"_setting_overrides": {
+					"Array Type": "item_recipe",
+					"Category Filter": "43",
+					"Min Quantity": 0
+				},
+				"_type": "array"
+			},
+			{
+				"_category_id": "159",
+				"_default_value": null,
+				"_id": "160",
+				"_name": "waste",
+				"_setting_overrides": {
+					"Category Filter": "43"
+				},
+				"_type": "reference"
+			},
+			{
+				"_category_id": "159",
+				"_default_value": {
+
+				},
+				"_id": "161",
+				"_name": "recipe",
+				"_setting_overrides": {
+					"Array Type": "item_recipe",
+					"Category Filter": "43"
+				},
+				"_type": "array"
+			},
+			{
+				"_category_id": "170",
+				"_default_value": null,
+				"_id": "166",
+				"_name": "result",
+				"_setting_overrides": {
+					"Category Filter": "43"
+				},
+				"_type": "reference"
+			},
+			{
+				"_category_id": "170",
+				"_default_value": "",
+				"_id": "168",
+				"_name": "description",
+				"_type": "string"
+			}
+		]
+	},
+	"_id_generator": {
+		"_ids_by_context": {
+			"default": 170
+		}
+	}
+}
