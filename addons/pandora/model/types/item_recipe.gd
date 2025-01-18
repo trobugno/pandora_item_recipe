@@ -15,8 +15,8 @@ func _init() -> void:
 func parse_value(variant: Variant, settings: Dictionary = {}) -> Variant:
 	print("item_recipe::parse_value\n\t[ variant ] >> ", variant)
 	if variant is Dictionary:
-		var reference = PandoraReference.new("", PandoraReference.Type.ENTITY)
-		reference.load_data(variant["item"])
+		print("\t[all_entities] >> ", Pandora.get_all_entities())
+		var reference = PandoraReference.new(variant["item"]["_entity_id"], PandoraReference.Type.ENTITY).get_entity()
 		print("\t[ reference ] >> ", reference)
 		
 		var value : Dictionary = {
@@ -39,5 +39,7 @@ func write_value(variant: Variant) -> Variant:
 func is_valid(variant: Variant) -> bool:
 	if variant is Dictionary:
 		var dictionary = variant as Dictionary
-		return dictionary.has("item") and dictionary.get("item") != null and dictionary.get("item") is PandoraEntity and dictionary.has("quantity")
+		var valid = dictionary.has("item") and dictionary.get("item") != null and dictionary.get("item") is PandoraEntity and dictionary.has("quantity")
+		print("item_recipe::is_valid\n\t[ valid ] >> ", valid)
+		return valid
 	return false
