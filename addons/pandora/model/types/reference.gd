@@ -21,11 +21,9 @@ func _init() -> void:
 
 
 func parse_value(variant: Variant, settings: Dictionary = {}) -> Variant:
-	print("reference::parse_value\n\t[ variant ] >> ", variant)
 	if variant is Dictionary:
 		var reference = PandoraReference.new("", 0)
 		reference.load_data(variant)
-		print("\t[ reference ] >> ", reference)
 		return reference
 	return variant
 

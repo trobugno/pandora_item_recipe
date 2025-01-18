@@ -137,7 +137,6 @@ func load_data() -> void:
 		data_loaded.emit()
 		return
 	var all_object_data = _storage.get_all_data(_context_manager.get_context_id())
-	print("api::load_data\n\t[ all_object_data ] >> ", all_object_data)
 	if all_object_data.has("_entity_data") and not all_object_data.is_empty():
 		_backend_load_state = _entity_backend.load_data(all_object_data["_entity_data"])
 	if all_object_data.has("_id_generator") and not all_object_data.is_empty():

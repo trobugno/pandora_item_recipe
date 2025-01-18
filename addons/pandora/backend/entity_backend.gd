@@ -235,7 +235,6 @@ func check_if_properties_will_change_on_move(
 
 ## Returns an existing entity (or category) or null otherwise
 func get_entity(entity_id: String) -> PandoraEntity:
-	print("entity_backend::get_entity\n\t[_entities] >> ", _entities)
 	if _categories.has(entity_id):
 		return get_category(entity_id)
 	if not _entities.has(entity_id):
@@ -294,7 +293,6 @@ func get_all_entities(
 		for key in _entities:
 			entities.append(_entities[key])
 	entities.sort_custom(sort)
-	print("entity_backend::get_all_entities\n\t[entities] >> ", entities)
 	return entities
 
 
@@ -323,7 +321,6 @@ func load_data(data: Dictionary) -> LoadState:
 	if _load_state == LoadState.LOAD_ERROR:
 		return _load_state
 	_entities = _deserialize_entities(data["_entities"])
-	print("entity_backend::load_data\n\t[_entities] >> ", _entities)
 	if _entities == null:
 		_load_state = LoadState.LOAD_ERROR
 	if _load_state == LoadState.LOAD_ERROR:
